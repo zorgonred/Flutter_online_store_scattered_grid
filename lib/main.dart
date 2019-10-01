@@ -117,8 +117,8 @@ class _HomeState extends State<Home> {
                       .start,
               children: <Widget>[
                 //The title
-                Text(
-                  "Cameras",
+                Text(doc.data["title"]
+                  ,
                   style: TextStyle(
                       color:
                       Color.fromRGBO(
@@ -134,16 +134,17 @@ class _HomeState extends State<Home> {
                 SizedBox(
                   height: 5.0,
                 ),
-                Text(
-                  "quantity",
-                  style: TextStyle(
-                      color: Colors
-                          .grey[500],
-                      fontSize: 12.0,
-                      fontWeight:
-                          FontWeight
-                              .bold),
-                )
+//                Text(
+//                  "quantity"
+////                  doc.data["quantity"],
+//                  ,style: TextStyle(
+//                      color: Colors
+//                          .grey[500],
+//                      fontSize: 12.0,
+//                      fontWeight:
+//                          FontWeight
+//                              .bold),
+//                )
               ],
             ),
           ),
